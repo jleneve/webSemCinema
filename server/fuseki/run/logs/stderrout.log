@@ -1,0 +1,26 @@
+[2019-05-10 17:10:52] Server     INFO  Apache Jena Fuseki 3.11.0
+[2019-05-10 17:10:53] Config     INFO  FUSEKI_HOME=/var/www/html/webSemCinema/server/fuseki
+[2019-05-10 17:10:53] Config     INFO  FUSEKI_BASE=/var/www/html/webSemCinema/server/fuseki/run
+[2019-05-10 17:10:53] Config     INFO  Shiro file: file:///var/www/html/webSemCinema/server/fuseki/run/shiro.ini
+[2019-05-10 17:10:54] Config     INFO  Configuration file: /var/www/html/webSemCinema/server/fuseki/run/config.ttl
+[2019-05-10 17:10:55] Config     INFO  Load configuration: file:///var/www/html/webSemCinema/server/fuseki/run/configuration/websemInf.ttl
+[2019-05-10 17:10:57] Config     INFO  Register: /websemInf
+[2019-05-10 17:10:58] Server     INFO  Started 2019/05/10 17:10:58 CEST on port 3030
+[2019-05-10 17:11:05] Admin      INFO  [1] GET http://localhost:3030/$/server
+[2019-05-10 17:11:05] Admin      INFO  [1] 200 OK (63 ms)
+[2019-05-10 17:11:05] Admin      INFO  [2] GET http://localhost:3030/$/stats/websemInf
+[2019-05-10 17:11:05] Admin      INFO  [2] GET stats dataset /websemInf
+[2019-05-10 17:11:05] Admin      INFO  [3] GET http://localhost:3030/$/stats/websemInf
+[2019-05-10 17:11:05] Admin      INFO  [3] GET stats dataset /websemInf
+[2019-05-10 17:11:05] Admin      INFO  [2] 200 OK (56 ms)
+[2019-05-10 17:11:05] Admin      INFO  [3] 200 OK (48 ms)
+[2019-05-10 17:11:07] Admin      INFO  [4] GET http://localhost:3030/$/stats/websemInf
+[2019-05-10 17:11:07] Admin      INFO  [4] GET stats dataset /websemInf
+[2019-05-10 17:11:07] Admin      INFO  [5] GET http://localhost:3030/$/stats/websemInf
+[2019-05-10 17:11:07] Admin      INFO  [4] 200 OK (40 ms)
+[2019-05-10 17:11:07] Admin      INFO  [5] GET stats dataset /websemInf
+[2019-05-10 17:11:07] Admin      INFO  [5] 200 OK (26 ms)
+[2019-05-10 17:13:01] Fuseki     INFO  [6] POST http://localhost:3030/websemInf/sparql
+[2019-05-10 17:13:01] Fuseki     WARN  SPARQL Query: Unrecognize request parameter (ignored): Accept
+[2019-05-10 17:13:01] Fuseki     INFO  [6] Query = select *  where {?x ?y ?z.}
+[2019-05-10 17:13:01] Fuseki     INFO  [6] 200 OK (135 ms)
