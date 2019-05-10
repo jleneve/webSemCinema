@@ -1,0 +1,361 @@
+@prefix : <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2> .
+
+<http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_2074d112_0383_4c68_b1a3_7a8811793c12
+:OWLObjectProperty_2074d112_0383_4c68_b1a3_7a8811793c12 rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:range :OWLClass_3e14fa49_05c3_44bf_9d40_e3d36c0c0253 ;
+                                                        owl:propertyChainAxiom ( :OWLObjectProperty_2074d112_0383_4c68_b1a3_7a8811793c12
+                                                                                 :OWLObjectProperty_e5c5b2d9_db95_44aa_9494_24001bf5860c
+                                                                               ) ;
+                                                        rdfs:label "se déroule dans"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_499d4c15_c48b_4256_b84d_86bd3350768c
+:OWLObjectProperty_499d4c15_c48b_4256_b84d_86bd3350768c rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        owl:inverseOf :OWLObjectProperty_f13dfef4_92b4_4441_bc9e_42f9557d0bd4 ;
+                                                        rdf:type owl:FunctionalProperty ,
+                                                                 owl:InverseFunctionalProperty ;
+                                                        rdfs:domain :OWLClass_664aa0fd_6ce8_4956_8eb2_d72c728032fb ;
+                                                        rdfs:range :OWLClass_83dfe295_8ec2_4bd2_bb80_5c8dd5aa4272 ;
+                                                        rdfs:label "a pour capitale"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_7f40b7a3_58ea_44a0_ad22_0cf4167d2e04
+:OWLObjectProperty_7f40b7a3_58ea_44a0_ad22_0cf4167d2e04 rdf:type owl:ObjectProperty ;
+                                                        owl:inverseOf :OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11 ;
+                                                        rdfs:label "a comme artiste"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11
+:OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11 rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain :OWLClass_3a747c81_737e_439e_9cb6_14039fd668aa ;
+                                                        rdfs:range :film ;
+                                                        rdfs:label "joue dans"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_c758e67d_fd86_4da9_9175_6f4f3eaf09f4
+:OWLObjectProperty_c758e67d_fd86_4da9_9175_6f4f3eaf09f4 rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        owl:propertyChainAxiom ( :OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11
+                                                                                 :OWLObjectProperty_7f40b7a3_58ea_44a0_ad22_0cf4167d2e04
+                                                                               ) ;
+                                                        rdfs:label "joue avec"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_debcb6a0_f7ad_45a5_9e31_b62ebba01f27
+:OWLObjectProperty_debcb6a0_f7ad_45a5_9e31_b62ebba01f27 rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain :film ;
+                                                        rdfs:range :OWLClass_4e48b982_f829_4508_88a7_f6c606d671ae ;
+                                                        rdfs:label "est réalisé par"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_e203bb86_47b2_453f_9019_03c75176aa5f
+:OWLObjectProperty_e203bb86_47b2_453f_9019_03c75176aa5f rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:range :OWLClass_15351af4_7f00_4a80_8f8b_28d7f421b444 ;
+                                                        rdfs:label "a pour nationalité"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_e5c5b2d9_db95_44aa_9494_24001bf5860c
+:OWLObjectProperty_e5c5b2d9_db95_44aa_9494_24001bf5860c rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdf:type owl:TransitiveProperty ;
+                                                        rdfs:domain :OWLClass_3e14fa49_05c3_44bf_9d40_e3d36c0c0253 ;
+                                                        rdfs:range :OWLClass_3e14fa49_05c3_44bf_9d40_e3d36c0c0253 ;
+                                                        rdfs:label "se situe dans"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_f13dfef4_92b4_4441_bc9e_42f9557d0bd4
+:OWLObjectProperty_f13dfef4_92b4_4441_bc9e_42f9557d0bd4 rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf :OWLObjectProperty_e5c5b2d9_db95_44aa_9494_24001bf5860c ;
+                                                        rdfs:domain :OWLClass_83dfe295_8ec2_4bd2_bb80_5c8dd5aa4272 ;
+                                                        rdfs:range :OWLClass_664aa0fd_6ce8_4956_8eb2_d72c728032fb ;
+                                                        rdfs:label "est la capitale de"@fr .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7
+:OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7 rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                                      rdfs:domain :film ;
+                                                      rdfs:range xsd:decimal ;
+                                                      rdfs:label "note"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_75909b18_c3d7_49c0_97a2_be66c794aecc
+:OWLDataProperty_75909b18_c3d7_49c0_97a2_be66c794aecc rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                                      rdfs:domain :OWLClass_18e4361f_860d_4e43_a593_7aca7744771f ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:label "genre"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63
+:OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63 rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                                      rdfs:domain :film ;
+                                                      rdfs:range xsd:integer ;
+                                                      rdfs:label "durée en minutes"@fr .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_0754231e_7070_46b7_887c_f638a8e88d8e
+:OWLClass_0754231e_7070_46b7_887c_f638a8e88d8e rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :OWLClass_18e4361f_860d_4e43_a593_7aca7744771f
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :OWLDataProperty_75909b18_c3d7_49c0_97a2_be66c794aecc ;
+                                                                                            owl:hasValue "femme"
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf :OWLClass_18e4361f_860d_4e43_a593_7aca7744771f ;
+                                               rdfs:label "femme"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_15351af4_7f00_4a80_8f8b_28d7f421b444
+:OWLClass_15351af4_7f00_4a80_8f8b_28d7f421b444 rdf:type owl:Class ;
+                                               rdfs:label "nationalité"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_18e4361f_860d_4e43_a593_7aca7744771f
+:OWLClass_18e4361f_860d_4e43_a593_7aca7744771f rdf:type owl:Class ;
+                                               rdfs:label "personne"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_33327f17_7ad6_4c5a_88c1_29d1134b7780
+:OWLClass_33327f17_7ad6_4c5a_88c1_29d1134b7780 rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :film
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63 ;
+                                                                                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                 owl:onDatatype xsd:int ;
+                                                                                                                 owl:withRestrictions ( [ xsd:minExclusive "59"^^xsd:int
+                                                                                                                                        ]
+                                                                                                                                      )
+                                                                                                               ]
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf :film ;
+                                               owl:disjointWith :OWLClass_cc81ca80_dd67_4e34_b941_6913f263cb54 ;
+                                               rdfs:label "long-métrage"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_3a747c81_737e_439e_9cb6_14039fd668aa
+:OWLClass_3a747c81_737e_439e_9cb6_14039fd668aa rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_18e4361f_860d_4e43_a593_7aca7744771f ;
+                                               rdfs:label "artiste"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_3e14fa49_05c3_44bf_9d40_e3d36c0c0253
+:OWLClass_3e14fa49_05c3_44bf_9d40_e3d36c0c0253 rdf:type owl:Class ;
+                                               rdfs:label "lieu"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_4e48b982_f829_4508_88a7_f6c606d671ae
+:OWLClass_4e48b982_f829_4508_88a7_f6c606d671ae rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_18e4361f_860d_4e43_a593_7aca7744771f ;
+                                               rdfs:label "réalisateur"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_664aa0fd_6ce8_4956_8eb2_d72c728032fb
+:OWLClass_664aa0fd_6ce8_4956_8eb2_d72c728032fb rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_3e14fa49_05c3_44bf_9d40_e3d36c0c0253 ;
+                                               owl:disjointWith :OWLClass_83dfe295_8ec2_4bd2_bb80_5c8dd5aa4272 ,
+                                                                :OWLClass_de3ca209_f401_4112_b2e7_403894dc468c ;
+                                               rdfs:label "pays"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_75765a6f_745e_474f_8556_b477ad073fce
+:OWLClass_75765a6f_745e_474f_8556_b477ad073fce rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :OWLClass_18e4361f_860d_4e43_a593_7aca7744771f
+                                                                                          :OWLClass_e892d804_f0f9_4366_80fd_ec1027e9f07b
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11 ;
+                                                                                            owl:someValuesFrom :film
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf :OWLClass_3a747c81_737e_439e_9cb6_14039fd668aa ;
+                                               rdfs:label "acteur"@fr ,
+                                                          "actor"@en ,
+                                                          "comédien"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_83dfe295_8ec2_4bd2_bb80_5c8dd5aa4272
+:OWLClass_83dfe295_8ec2_4bd2_bb80_5c8dd5aa4272 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_3e14fa49_05c3_44bf_9d40_e3d36c0c0253 ;
+                                               rdfs:label "ville"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_8418e06a_3166_4fd9_9e39_13da692e0504
+:OWLClass_8418e06a_3166_4fd9_9e39_13da692e0504 rdf:type owl:Class ;
+                                               rdfs:subClassOf :film ;
+                                               rdfs:label "film européen"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_cc81ca80_dd67_4e34_b941_6913f263cb54
+:OWLClass_cc81ca80_dd67_4e34_b941_6913f263cb54 rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :film
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63 ;
+                                                                                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                 owl:onDatatype xsd:int ;
+                                                                                                                 owl:withRestrictions ( [ xsd:maxInclusive "59"^^xsd:int
+                                                                                                                                        ]
+                                                                                                                                      )
+                                                                                                               ]
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf :film ;
+                                               rdfs:label "court-métrage"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_de3ca209_f401_4112_b2e7_403894dc468c
+:OWLClass_de3ca209_f401_4112_b2e7_403894dc468c rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_3e14fa49_05c3_44bf_9d40_e3d36c0c0253 ;
+                                               rdfs:label "continent"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_e0dc9a8a_9cdd_47b0_83f6_77867757a433
+:OWLClass_e0dc9a8a_9cdd_47b0_83f6_77867757a433 rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :OWLClass_0754231e_7070_46b7_887c_f638a8e88d8e
+                                                                                          :OWLClass_18e4361f_860d_4e43_a593_7aca7744771f
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11 ;
+                                                                                            owl:someValuesFrom :film
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf :OWLClass_3a747c81_737e_439e_9cb6_14039fd668aa ;
+                                               rdfs:label "actress"@en ,
+                                                          "actrice"@fr ,
+                                                          "comédienne"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_e892d804_f0f9_4366_80fd_ec1027e9f07b
+:OWLClass_e892d804_f0f9_4366_80fd_ec1027e9f07b rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :OWLClass_18e4361f_860d_4e43_a593_7aca7744771f
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :OWLDataProperty_75909b18_c3d7_49c0_97a2_be66c794aecc ;
+                                                                                            owl:hasValue "homme"
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf :OWLClass_18e4361f_860d_4e43_a593_7aca7744771f ;
+                                               rdfs:label "homme"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#film
+:film rdf:type owl:Class ;
+      rdfs:label "film"@fr ,
+                 "movie"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_19e1a70b_ff72_4b86_bda5_bd1e02b4f2a2
+:OWLNamedIndividual_19e1a70b_ff72_4b86_bda5_bd1e02b4f2a2 rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_83dfe295_8ec2_4bd2_bb80_5c8dd5aa4272 ;
+                                                         rdfs:label "Monaco"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_25fdc02f_516d_4593_8af7_eb751e2b0933
+:OWLNamedIndividual_25fdc02f_516d_4593_8af7_eb751e2b0933 rdf:type owl:NamedIndividual ;
+                                                         :OWLObjectProperty_499d4c15_c48b_4256_b84d_86bd3350768c :OWLNamedIndividual_5fcf11cc_fdce_4cce_a2de_c230e60fe589 ,
+                                                                                                                 :OWLNamedIndividual_84a76f7d_1df1_4c7d_875d_5aee36943b23 ;
+                                                         :OWLObjectProperty_e5c5b2d9_db95_44aa_9494_24001bf5860c :OWLNamedIndividual_865f0a3a_d879_4c3e_b00d_409ba357b1b2 ;
+                                                         rdfs:label "France"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_31c39fbf_c3ad_4916_b4ed_892cea36aaa8
+:OWLNamedIndividual_31c39fbf_c3ad_4916_b4ed_892cea36aaa8 rdf:type owl:NamedIndividual ;
+                                                         :OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11 :OWLNamedIndividual_fb2eea2d_85db_474a_8f96_775faf7afbf4 ;
+                                                         :OWLDataProperty_75909b18_c3d7_49c0_97a2_be66c794aecc "femme" ;
+                                                         rdfs:label "Bérénice Bejo"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_3d2682cc_2219_4148_9908_7b31fe220a7a
+:OWLNamedIndividual_3d2682cc_2219_4148_9908_7b31fe220a7a rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "Woody Allen"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_5fcf11cc_fdce_4cce_a2de_c230e60fe589
+:OWLNamedIndividual_5fcf11cc_fdce_4cce_a2de_c230e60fe589 rdf:type owl:NamedIndividual ;
+                                                         :OWLObjectProperty_e5c5b2d9_db95_44aa_9494_24001bf5860c :OWLNamedIndividual_25fdc02f_516d_4593_8af7_eb751e2b0933 ;
+                                                         rdfs:label "Paris"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_762324ea_b46a_44b3_91a1_3db674df9a2d
+:OWLNamedIndividual_762324ea_b46a_44b3_91a1_3db674df9a2d rdf:type owl:NamedIndividual ;
+                                                         :OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11 :OWLNamedIndividual_fb2eea2d_85db_474a_8f96_775faf7afbf4 ;
+                                                         :OWLDataProperty_75909b18_c3d7_49c0_97a2_be66c794aecc "homme" ;
+                                                         rdfs:label "Jean Dujardin"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_84a76f7d_1df1_4c7d_875d_5aee36943b23
+:OWLNamedIndividual_84a76f7d_1df1_4c7d_875d_5aee36943b23 rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "la Ville Lumière"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_865f0a3a_d879_4c3e_b00d_409ba357b1b2
+:OWLNamedIndividual_865f0a3a_d879_4c3e_b00d_409ba357b1b2 rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "Europe"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_a5f678d8_dcb3_4b04_b8bc_b49a632d7f02
+:OWLNamedIndividual_a5f678d8_dcb3_4b04_b8bc_b49a632d7f02 rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "nationalité française"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_b0f2b85c_f04f_48e1_9a97_2b74f74e48ed
+:OWLNamedIndividual_b0f2b85c_f04f_48e1_9a97_2b74f74e48ed rdf:type owl:NamedIndividual ;
+                                                         :OWLObjectProperty_2074d112_0383_4c68_b1a3_7a8811793c12 :OWLNamedIndividual_5fcf11cc_fdce_4cce_a2de_c230e60fe589 ;
+                                                         :OWLObjectProperty_debcb6a0_f7ad_45a5_9e31_b62ebba01f27 :OWLNamedIndividual_3d2682cc_2219_4148_9908_7b31fe220a7a ;
+                                                         rdfs:label "Midnight in Paris"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_e82e3719_326f_4212_9063_57805568dcb9
+:OWLNamedIndividual_e82e3719_326f_4212_9063_57805568dcb9 rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "Michel Hazanavicius"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_fb2eea2d_85db_474a_8f96_775faf7afbf4
+:OWLNamedIndividual_fb2eea2d_85db_474a_8f96_775faf7afbf4 rdf:type owl:NamedIndividual ;
+                                                         :OWLObjectProperty_debcb6a0_f7ad_45a5_9e31_b62ebba01f27 :OWLNamedIndividual_e82e3719_326f_4212_9063_57805568dcb9 ;
+                                                         :OWLObjectProperty_e203bb86_47b2_453f_9019_03c75176aa5f :OWLNamedIndividual_a5f678d8_dcb3_4b04_b8bc_b49a632d7f02 ;
+                                                         :OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63 "100"^^xsd:int ;
+                                                         rdfs:label "The Artist"@fr .
+
+
+###  Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi
