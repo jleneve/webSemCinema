@@ -1,0 +1,5 @@
+{
+    "require": {
+        "bordercloud/sparql": "^2.0"
+    }
+}
