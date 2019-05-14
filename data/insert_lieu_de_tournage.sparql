@@ -1,0 +1,29 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+INSERT {?newUri a ?lieu_de_tournage. 
+?newUri rdfs:label "test adresse"@fr.}
+WHERE{ 
+  ?lieu_de_tournage rdfs:label "lieu de tournage"@fr.
+  BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("test_adresse"))) AS ?newUri).
+};
+
+INSERT {?newUri a ?film. 
+?newUri rdfs:label "test_film"@fr.}
+WHERE{ 
+  ?film rdfs:label "film"@fr.
+  BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("test_film"))) AS ?newUri).
+};
+
+INSERT {<http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#test_film> 
+    ?tourne_dans 
+<http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#test_adresse>}
+WHERE{ 
+ ?tourne_dans rdfs:label "a été tourné dans"@fr.
+};
+
+
+INSERT DATA {<http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coordonne1> <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3d9dc69a_be17_4ff8_9811_7d64595a225b> "10.0"^^xsd:decimal. <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coordonne1> <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_30b3afa8_0143_4c02_ba87_52ed69fdb037> "11.0"^^xsd:decimal.
+ <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#test_adresse> <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_34bb83bd_13bf_460d_9a5f_9721d3b218d6> <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coordonne1>
+};
