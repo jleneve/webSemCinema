@@ -39,6 +39,14 @@
                                                         rdfs:label "a comme artiste"@fr .
 
 
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_8b624f36_40f7_4152_94b4_2243b6a3a2ac
+:OWLObjectProperty_8b624f36_40f7_4152_94b4_2243b6a3a2ac rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain :film ;
+                                                        rdfs:range :OWLClass_c5a02e54_1549_463a_90f7_4c2e917de860 ;
+                                                        rdfs:label "a été tourné dans"@fr .
+
+
 ###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11
 :OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11 rdf:type owl:ObjectProperty ;
                                                         rdfs:subPropertyOf owl:topObjectProperty ;
@@ -533,6 +541,12 @@
                                                          :OWLObjectProperty_2074d112_0383_4c68_b1a3_7a8811793c12 :OWLNamedIndividual_5fcf11cc_fdce_4cce_a2de_c230e60fe589 ;
                                                          :OWLObjectProperty_debcb6a0_f7ad_45a5_9e31_b62ebba01f27 :OWLNamedIndividual_3d2682cc_2219_4148_9908_7b31fe220a7a ;
                                                          rdfs:label "Midnight in Paris"@fr .
+
+
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_dc374c55_ceee_4c92_99b7_ceb669644fa7
+:OWLNamedIndividual_dc374c55_ceee_4c92_99b7_ceb669644fa7 rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_c5a02e54_1549_463a_90f7_4c2e917de860 ;
+                                                         rdfs:label "test adresse"@fr .
 
 
 ###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLNamedIndividual_e82e3719_326f_4212_9063_57805568dcb9
