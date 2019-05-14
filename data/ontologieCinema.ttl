@@ -22,6 +22,14 @@
                                                         rdfs:label "se déroule dans"@fr .
 
 
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_34bb83bd_13bf_460d_9a5f_9721d3b218d6
+:OWLObjectProperty_34bb83bd_13bf_460d_9a5f_9721d3b218d6 rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain :OWLClass_c5a02e54_1549_463a_90f7_4c2e917de860 ;
+                                                        rdfs:range :OWLClass_fa43ccb9_6755_4f19_8b4a_4562b0a55ddf ;
+                                                        rdfs:label "a pour coordonnées"@fr .
+
+
 ###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_499d4c15_c48b_4256_b84d_86bd3350768c
 :OWLObjectProperty_499d4c15_c48b_4256_b84d_86bd3350768c rdf:type owl:ObjectProperty ;
                                                         rdfs:subPropertyOf owl:topObjectProperty ;
