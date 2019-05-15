@@ -12,7 +12,7 @@ $sc = new SparqlClient();
 $sc->setEndpointWrite("http://localhost:3030/websemInf/update");
 $sc->setEndpointRead("http://localhost:3030/websemInf/query");
 
-if ($handle = fopen("/var/www/html/webSemCinema/data/lieu_de_tournage.csv", "r")){
+if ($handle = fopen("lieu_de_tournage.csv", "r")){
     $row = 0;
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         if($row !=0){

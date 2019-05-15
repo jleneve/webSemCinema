@@ -1,7 +1,7 @@
 ////--------------------------------------------------Déclaration des variables globales--------------------------------------------------------------\\\\
 
 //groupe contenant les marqueurs liées aux parcelles
-/*var parcelles = L.markerClusterGroup({
+var parcelles = L.markerClusterGroup({
 	iconCreateFunction: function(cluster) {
         var icon = markersParcelles._defaultIconCreateFunction(cluster);
         icon.options.className += '-parcelles-group';
@@ -9,7 +9,7 @@
     }
 });
 
-//groupe contenant les marqueurs liées aux ruchers
+/*//groupe contenant les marqueurs liées aux ruchers
 var ruchers = L.markerClusterGroup({
 	iconCreateFunction: function(cluster) {
         var icon = markersRuchers._defaultIconCreateFunction(cluster);
@@ -19,8 +19,9 @@ var ruchers = L.markerClusterGroup({
 });*/
 
 //markercluster
-/*var markersParcelles = L.markerClusterGroup();
-var markersRuchers = L.markerClusterGroup();*/
+var markersParcelles = L.markerClusterGroup();
+/*var markersRuchers = L.markerClusterGroup();*/
+
 
 //tuile par défaut pour la map
 var defaut = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -43,10 +44,10 @@ var baseMaps = {
 }
 
 //Groupe de vue des parcelles/ruchers
-/*var overlayMaps = {
+var overlayMaps = {
 	"Parcelles": parcelles,
-	"Ruchers": ruchers
-}*/
+	/*"Ruchers": ruchers*/
+}
 
 //icône marqueur bleu
 var myIconBleu = L.icon({
@@ -123,8 +124,8 @@ function chooseAddr(lat, lng, type) {
 		mymap.setZoom(13);
 	}
 	
-	placementMarqueur(lat, lng);
-	MAJ_champs_Emplacement(lat, lng);
+	//placementMarqueur(lat, lng);
+	//MAJ_champs_Emplacement(lat, lng);
 }
 
 // fonction permettant de créer un nouveau marker
@@ -309,14 +310,14 @@ function MAJ_nom_ville(ville, codePostal){
 var mymap = L.map('map', {
 	center: [46.628346, 2.577960],
 	zoom: 6,
-	layers: [defaut],
+	layers: [defaut, parcelles],
 	loadingControl: true
 });
 
 ////------------------------------------------------------- Ajout des contrôleurs à la map ----------------------------------------------------------\\\\
 
 // contrôle layers
-L.control.layers(baseMaps, null, {position: 'bottomleft'}).addTo(mymap);
+L.control.layers(baseMaps, overlayMaps, {position: 'bottomleft'}).addTo(mymap);
 
 // contrôle échelle
 L.control.scale().addTo(mymap);
@@ -327,4 +328,43 @@ L.control.fullscreen({
 	forceSeparateButton: true
 }).addTo(mymap);
 
-mymap.on('click', onMapClick);
+//mymap.on('click', onMapClick);
+
+var recupEmplacements = $.getJSON("http://localhost/webSemCinema/controller/position_lieu_de_tournage.php", function(data) {
+	$.each(data, function(key, val){
+		parcelles.addLayer(L.marker([val.x, val.y], {icon: myIconBleu}).bindPopup("Youhou"));
+		markersParcelles.addLayer(parcelles);
+	});
+});
+
+recupEmplacements.complete(function() {
+	mymap.addLayer(markersParcelles);
+});
+
+// contrôle localisation actuelle 
+L.control.locate({
+	icon: 'fa fa-map-marker',
+	position: 'topright',
+	locateOptions: {
+		maxZoom: 19
+	}
+}).addTo(mymap);
+
+// contrôle géocoder (barre de recherche)
+var geocoder = L.Control.geocoder().addTo(mymap);
+
+geocoder.markGeocode = function(result) {
+	chooseAddr(result.center.lat, result.center.lng);
+};
+
+////------------------------------------------------------- Fonctions ------------------------------------------------------------------------------\\\\
+function onLocationFound(e) 
+{
+	onMapClick(e);
+}
+////------------------------------------------------------- Ajout des évènements à la map ----------------------------------------------------------\\\\
+
+// Evènement onClick
+//mymap.on('click', onMapClick);
+
+mymap.on('locationfound', onLocationFound);
