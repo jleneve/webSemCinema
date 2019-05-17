@@ -172,6 +172,14 @@
                                                       rdfs:label "durée en minutes"@fr .
 
 
+###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5
+:OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5 rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                                      rdfs:domain :film ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:label "résumé"@fr .
+
+
 ###  http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_b394d0b8_b94d_4208_9397_96689de20cd3
 :OWLDataProperty_b394d0b8_b94d_4208_9397_96689de20cd3 rdf:type owl:DatatypeProperty ;
                                                       rdfs:subPropertyOf owl:topDataProperty ;
