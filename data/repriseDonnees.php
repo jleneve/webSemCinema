@@ -2,7 +2,7 @@
 //display error
 ini_set('display_errors', 1);
 
-
+set_time_limit(0);
 require_once ('../vendor/autoload.php');
 require_once ('../utils/utils.php');
 use BorderCloud\SPARQL\SparqlClient;
@@ -93,6 +93,7 @@ WHERE{
             }
         }
     $row++;
+    
     }
 }else {
   var_dump("erreur lecture");
