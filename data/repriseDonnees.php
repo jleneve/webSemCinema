@@ -72,6 +72,15 @@ WHERE{
 ";
                 $rows = $sc->query($prefix.$q);
 
+                //insert realisateur
+                $q = "INSERT {?newUri a <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLClass_4e48b982_f829_4508_88a7_f6c606d671ae>. 
+?newUri rdfs:label \"".$realisateur."\"@fr.}
+WHERE{ 
+  BIND (uri(concat(\"http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#\",encode_for_uri(\"".clear_str($realisateur)."\"))) AS ?newUri).
+};
+"; 
+                $rows = $sc->query($prefix.$q);             
+
                 //insert film tourne dans
                 $q = "INSERT {<http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#".clear_str($titre)."> 
     ?tourne_dans 
@@ -84,7 +93,11 @@ WHERE{
 
                 //insert data
                 $q = "INSERT DATA {<http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coordonne".$row."> <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3d9dc69a_be17_4ff8_9811_7d64595a225b> \"".$y."\"^^xsd:decimal. <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coordonne".$row."> <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_30b3afa8_0143_4c02_ba87_52ed69fdb037> \"".$x."\"^^xsd:decimal.
- <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#".clear_str($adresse)."> <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_34bb83bd_13bf_460d_9a5f_9721d3b218d6> <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coordonne".$row.">
+ <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#".clear_str($adresse)."> <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_34bb83bd_13bf_460d_9a5f_9721d3b218d6> <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coordonne".$row.">.
+    <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#".clear_str($titre)."> 
+    <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_debcb6a0_f7ad_45a5_9e31_b62ebba01f27> 
+    <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#".clear_str($realisateur).">
+
 };
 ";
                 $rows = $sc->query($prefix.$q);                
