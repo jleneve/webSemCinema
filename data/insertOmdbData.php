@@ -57,8 +57,8 @@ function requeteOmdb($sc,$titre,$realisateur)
 
 ";
     echo "//////////////////////////////////////////////////////";
-    echo "num ligne ".$row;
-    $response = file_get_contents('http://www.omdbapi.com/?apikey=99bac2bc&t='.$titre);
+    //echo "num ligne ".$row;
+    $response = file_get_contents('http://www.omdbapi.com/?apikey=99bac2bc&t='.str_replace(" ","%20",$titre));
     $response = json_decode($response,true);
     if($response["Response"]== "True"){
         $note = $response["imdbRating"];
