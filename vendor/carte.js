@@ -221,66 +221,13 @@ function searchAdresse()
 }
 // fonction permettant de retrouver la latitude et longitude
 // à partir d'une adresse si les deux champs adresses sont renseignés
-function searchLatLong()
+function searchLatLong(adresse)
 {
-	if(document.getElementById('addr1').value != '' && document.getElementById("addr2").value != '')
-	{
-		$.getJSON('https://nominatim.openstreetmap.org/?format=json&addressdetails=1&q=' + document.getElementById("addr1").value + ' ' + document.getElementById("addr2").value + '&limit=1', function(data) {
-			$.each(data, function(key, val) {
-				var addr1 = window.document.getElementById("addr1");
-				var addr2 = window.document.getElementById("addr2");
-				window.document.getElementById("lat").value = val.lat;
-				window.document.getElementById("long").value = val.lon;
-
-				if (val.address.house_number && val.address.road) {
-					addr1.value = val.address.house_number + ", " + val.address.road;
-				}
-				else if (val.address.road) {
-					addr1.value = val.address.road;
-				}
-				else if (val.address.pedestrian) {
-					addr1.value = val.address.pedestrian;
-				}
-				else {
-					val.value = "Adresse non trouvée";
-				}
-
-				if (val.address.village && val.address.country) {
-					if(val.address.postcode)
-						addr2.value = val.address.postcode + ", " + val.address.village + ", " + val.address.country;
-					else
-						addr2.value = val.address.village + ", " + val.address.country; 
-				}
-				else if(val.address.town && val.address.country) {
-					if(val.address.postcode)
-						addr2.value = val.address.postcode + ", " + val.address.town + ", " + val.address.country;
-					else
-						addr2.value = val.address.town + ", " + val.address.country;
-		 		}
-				else if(val.address.city && val.address.country) {
-					if(val.address.postcode)
-						addr2.value = val.address.postcode + ", " + val.address.city + ", " + val.address.country;
-					else
-						addr2.value = val.address.city + ", " + val.address.country;
-		 		}
-		 		else
-		 			addr2.value = val.address.county + ", " + val.address.country;
-
-		 		if(val.address.city){
-		 			MAJ_nom_ville(val.address.city, val.address.postcode);
-		 		}
-		 		else if(val.address.town){
-		 			MAJ_nom_ville(val.address.town, val.address.postcode);
-		 		}
-		 		else if(val.address.village){
-		 			MAJ_nom_ville(val.address.village, val.address.postcode);
-		 		}
-		 		else 
-		 			MAJ_nom_ville(val.address.county, val.address.postcode);
-	 			placementMarqueur(val.lat, val.lon);
-			});
+	$.getJSON('https://nominatim.openstreetmap.org/?format=json&addressdetails=1&q=' + adresse + '&limit=1', function(data) {
+		$.each(data, function(key, val) {
+ 			alert(val.lat + " | " + val.lon);
 		});
-	}
+	});
 }
 
 
@@ -368,3 +315,5 @@ function onLocationFound(e)
 //mymap.on('click', onMapClick);
 
 mymap.on('locationfound', onLocationFound);
+
+//searchLatLong("San Francisco, Mason & California Streets (Nob Hill)");
