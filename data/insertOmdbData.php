@@ -24,8 +24,7 @@ SELECT ?titre ?nomRealisateur WHERE
     ?a rdfs:label ?titre.
     ?a <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_debcb6a0_f7ad_45a5_9e31_b62ebba01f27> ?realisateur.
     ?realisateur rdfs:label ?nomRealisateur
-}
-LIMIT 10";
+}";
 $rows = $sc->query($q, 'rows');
 
 $err = $sc->getErrors();
