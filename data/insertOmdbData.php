@@ -6,6 +6,7 @@ set_time_limit(0);
 require_once ('../vendor/autoload.php');
 require_once ('../utils/utils.php');
 
+$fp = fopen('omdb.txt', 'w');
 
 $endpoint = "http://localhost:3030/websemInf/sparql";
 $sc = new SparqlClient();
@@ -37,20 +38,20 @@ $tabFilms = array();
 
 $i = 0;
 //var_dump($rows);
-
 foreach ($rows["result"]["rows"] as $row) {
-    sleep(0.5);
+    
+    sleep(1);
     $titre = explode("/", $row["titre"])[0];
     $realisateur = $row["nomRealisateur"];
-    requeteOmdb($sc,$titre,$realisateur);
+    requeteOmdb($sc,$titre,$realisateur, $fp);
     /*if($i == 10){
         break;
     }*/
 }
+fclose($fp);
 
-function requeteOmdb($sc,$titre,$realisateur)
+function requeteOmdb($sc,$titre,$realisateur, $fp)
 {
-
     $prefix = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -96,6 +97,8 @@ function requeteOmdb($sc,$titre,$realisateur)
         };";
 
             $rows = $sc->query($prefix.$q);
+            fwrite($fp, $q);
+
             //echo $response["Director"];
             $directors = explode(", ", $response["Director"]);
             /*foreach ($directors as $realisateur) {
@@ -124,11 +127,14 @@ function requeteOmdb($sc,$titre,$realisateur)
           BIND (uri(concat(\"http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#\",encode_for_uri(\"".clear_str($comedien)."\"))) AS ?newUri).
         };";
                 $rows = $sc->query($prefix.$q);
+                fwrite($fp, $q);
+
 
                 $q = "INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#".clear_str($titre).">
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#".clear_str($comedien)."> }";
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#".clear_str($comedien)."> };";
                 $rows = $sc->query($prefix.$q);
+                fwrite($fp, $q);
             }
         }
     }
