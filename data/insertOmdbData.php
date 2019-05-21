@@ -39,6 +39,7 @@ $i = 0;
 //var_dump($rows);
 
 foreach ($rows["result"]["rows"] as $row) {
+    sleep(0.5);
     $titre = explode("/", $row["titre"])[0];
     $realisateur = $row["nomRealisateur"];
     requeteOmdb($sc,$titre,$realisateur);
@@ -97,7 +98,7 @@ function requeteOmdb($sc,$titre,$realisateur)
             $rows = $sc->query($prefix.$q);
             //echo $response["Director"];
             $directors = explode(", ", $response["Director"]);
-            foreach ($directors as $realisateur) {
+            /*foreach ($directors as $realisateur) {
                 $q = "INSERT {?newUri a ?realisateurUri. 
         ?newUri rdfs:label \"".$realisateur."\"@fr.}
         WHERE{ 
@@ -112,7 +113,7 @@ function requeteOmdb($sc,$titre,$realisateur)
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#".clear_str($realisateur).">
         };";
                 $rows = $sc->query($prefix.$q);
-            }
+            }*/
             //echo $response["Actors"];
             $actors = explode(", ", $response["Actors"]);
             foreach ($actors as $comedien) {
