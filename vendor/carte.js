@@ -1,13 +1,53 @@
 ////--------------------------------------------------Déclaration des variables globales--------------------------------------------------------------\\\\
 
 //groupe contenant les marqueurs liées aux parcelles
-var parcelles = L.markerClusterGroup({
+/*var filmControverse = L.markerClusterGroup({
 	iconCreateFunction: function(cluster) {
-        var icon = markersParcelles._defaultIconCreateFunction(cluster);
-        icon.options.className += '-parcelles-group';
+        var icon = markersfilmControverse._defaultIconCreateFunction(cluster);
+        icon.options.className += '-filmControverse-group';
         return icon;
     }
 });
+
+var filmBanal = L.markerClusterGroup({
+	iconCreateFunction: function(cluster) {
+        var icon = markersfilmBanal._defaultIconCreateFunction(cluster);
+        icon.options.className += '-filmBanal-group';
+        return icon;
+    }
+});
+
+var filmBon = L.markerClusterGroup({
+	iconCreateFunction: function(cluster) {
+        var icon = markersfilmBon._defaultIconCreateFunction(cluster);
+        icon.options.className += '-filmBon-group';
+        return icon;
+    }
+});
+
+var filmExcellent = L.markerClusterGroup({
+	iconCreateFunction: function(cluster) {
+        var icon = markersfilmExcellent._defaultIconCreateFunction(cluster);
+        icon.options.className += '-filmExcellent-group';
+        return icon;
+    }
+});
+
+var filmChefDoeuvre = L.markerClusterGroup({
+	iconCreateFunction: function(cluster) {
+        var icon = markersfilmChefDoeuvre._defaultIconCreateFunction(cluster);
+        icon.options.className += '-filmChefDoeuvre-group';
+        return icon;
+    }
+});
+
+var filmNonNote = L.markerClusterGroup({
+	iconCreateFunction: function(cluster) {
+        var icon = markersfilmNonNote._defaultIconCreateFunction(cluster);
+        icon.options.className += '-filmNonNote-group';
+        return icon;
+    }
+});*/
 
 /*//groupe contenant les marqueurs liées aux ruchers
 var ruchers = L.markerClusterGroup({
@@ -19,8 +59,20 @@ var ruchers = L.markerClusterGroup({
 });*/
 
 //markercluster
-var markersParcelles = L.markerClusterGroup();
+/*var markersfilmControverse = L.markerClusterGroup();
+var markersfilmBanal = L.markerClusterGroup();
+var markersfilmBon = L.markerClusterGroup();
+var markersfilmExcellent = L.markerClusterGroup();
+var markersfilmChefDoeuvre = L.markerClusterGroup();
+var markersfilmNonNote = L.markerClusterGroup();*/
 /*var markersRuchers = L.markerClusterGroup();*/
+
+var filmControverse = L.layerGroup();
+var filmBanal = L.layerGroup();
+var filmBon = L.layerGroup();
+var filmExcellent = L.layerGroup();
+var filmChefDoeuvre = L.layerGroup();
+var filmNonNote = L.layerGroup();
 
 
 //tuile par défaut pour la map
@@ -45,7 +97,12 @@ var baseMaps = {
 
 //Groupe de vue des parcelles/ruchers
 var overlayMaps = {
-	"Parcelles": parcelles,
+	"Film Controversé": filmControverse,
+	"Film Banal": filmBanal,
+	"Film Bon": filmBon,
+	"Film Excellent": filmExcellent,
+	"Film Chef d'oeuvre": filmChefDoeuvre,
+	"Film Non Noté": filmNonNote,
 	/*"Ruchers": ruchers*/
 }
 
@@ -72,6 +129,56 @@ var myIconVert = L.icon({
 //icône marqueur rose
 var myIconRose = L.icon({
 	iconUrl: '../images/marker-icon-pink.png',
+
+	iconSize:     [41, 41], // size of the icon
+    iconAnchor:   [20, 41], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [0, -30] // point from which the popup should open relative to the iconAnchor
+});
+
+//icône marqueur rose
+var myIconRouge = L.icon({
+	iconUrl: '../images/marker-icon-rouge.png',
+
+	iconSize:     [41, 41], // size of the icon
+    iconAnchor:   [20, 41], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [0, -30] // point from which the popup should open relative to the iconAnchor
+});
+
+//icône marqueur rose
+var myIconOrange = L.icon({
+	iconUrl: '../images/marker-icon-orange.png',
+
+	iconSize:     [41, 41], // size of the icon
+    iconAnchor:   [20, 41], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [0, -30] // point from which the popup should open relative to the iconAnchor
+});
+
+//icône marqueur rose
+var myIconJaune = L.icon({
+	iconUrl: '../images/marker-icon-jaune.png',
+
+	iconSize:     [41, 41], // size of the icon
+    iconAnchor:   [20, 41], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [0, -30] // point from which the popup should open relative to the iconAnchor
+});
+
+//icône marqueur rose
+var myIconVertCitron = L.icon({
+	iconUrl: '../images/marker-icon-vert-citron.png',
+
+	iconSize:     [41, 41], // size of the icon
+    iconAnchor:   [20, 41], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [0, -30] // point from which the popup should open relative to the iconAnchor
+});
+
+//icône marqueur rose
+var myIconNoir = L.icon({
+	iconUrl: '../images/marker-icon-noir.png',
 
 	iconSize:     [41, 41], // size of the icon
     iconAnchor:   [20, 41], // point of the icon which will correspond to marker's location
@@ -257,7 +364,7 @@ function MAJ_nom_ville(ville, codePostal){
 var mymap = L.map('map', {
 	center: [46.628346, 2.577960],
 	zoom: 6,
-	layers: [defaut, parcelles],
+	layers: [defaut, filmControverse, filmBanal, filmBon, filmExcellent, filmChefDoeuvre, filmNonNote],
 	loadingControl: true
 });
 
@@ -277,15 +384,172 @@ L.control.fullscreen({
 
 //mymap.on('click', onMapClick);
 
+var tabAllFilms = [];
+var tabCourtMetrages = [];
+var tabLongMetrages = [];
+var j = 0;
+var k = 0;
+var l = 0;
+
 var recupEmplacements = $.getJSON("http://localhost/webSemCinema/controller/position_lieu_de_tournage.php", function(data) {
 	$.each(data, function(key, val){
-		parcelles.addLayer(L.marker([val.x, val.y], {icon: myIconBleu}).bindPopup("Youhou"));
-		markersParcelles.addLayer(parcelles);
+		var tableau = [];
+		tableau["x"] = val.x;
+		tableau["y"] = val.y;
+		tableau["note"] = val.note;
+		tableau["titre"] = val.titre;
+		tableau["resume"] = val.resume;
+		tableau["poster"] = val.poster;
+		tableau["nomRealisateur"] = val.nomRealisateur;
+		tableau["duree"] = val.duree;
+		tabAllFilms[j] = tableau;
+		j++;
+		if(val.duree == null)
+		{
+			//on ne fait rien
+		}
+		else if(val.duree <= 59 )
+		{
+			tabCourtMetrages[k] = tableau;
+			k++;
+		}
+		else if(val. duree > 59)
+		{
+			tabLongMetrages[l] = tableau;
+			l++;
+		}
+		//console.log(val.note + "        " + val.titre + "\n");
+		/*if(val.note == null)
+		{
+			filmNonNote.addLayer(L.marker([val.x, val.y], {icon: myIconNoir}).bindPopup("Titre : " + val.titre + "<br>Résumé : " + val.resume + "<br>Réalisateur : " +val.nomRealisateur+ "<br>Durée : " + val.duree + " min<br>Note : " + val.note + "/10<br><img src=\""+val.poster+"\"/>"));
+		}
+		else if(val.note < 2)
+		{
+			filmControverse.addLayer(L.marker([val.x, val.y], {icon: myIconRouge}).bindPopup("Titre : " + val.titre + "<br>Résumé : " + val.resume + "<br>Réalisateur : " +val.nomRealisateur+ "<br>Durée : " + val.duree + " min<br>Note : " + val.note + "/10<br><img src=\""+val.poster+"\"/>"));
+			//markersfilmControverse.addLayer(filmControverse);
+		}
+		else if(val.note < 4 && val.note >= 2)
+		{
+			filmBanal.addLayer(L.marker([val.x, val.y], {icon: myIconOrange}).bindPopup("Titre : " + val.titre + "<br>Résumé : " + val.resume + "<br>Réalisateur : " +val.nomRealisateur+ "<br>Durée : " + val.duree + " min<br>Note : " + val.note + "/10<br><img src=\""+val.poster+"\"/>"));
+			//markersfilmBanal.addLayer(filmBanal);
+		}
+		else if(val.note < 6 && val.note >= 4)
+		{
+			filmBon.addLayer(L.marker([val.x, val.y], {icon: myIconJaune}).bindPopup("Titre : " + val.titre + "<br>Résumé : " + val.resume + "<br>Réalisateur : " +val.nomRealisateur+ "<br>Durée : " + val.duree + " min<br>Note : " + val.note + "/10<br><img src=\""+val.poster+"\"/>"));
+			//markersfilmBon.addLayer(filmBon);
+		}
+		else if(val.note < 8 && val.note >= 6)
+		{
+			filmExcellent.addLayer(L.marker([val.x, val.y], {icon: myIconVertCitron}).bindPopup("Titre : " + val.titre + "<br>Résumé : " + val.resume + "<br>Réalisateur : " +val.nomRealisateur+ "<br>Durée : " + val.duree + " min<br>Note : " + val.note + "/10<br><img src=\""+val.poster+"\"/>"));
+			//markersfilmExcellent.addLayer(filmExcellent);
+		}
+		else if(val.note < 10 && val.note >= 8)
+		{
+			filmChefDoeuvre.addLayer(L.marker([val.x, val.y], {icon: myIconVert}).bindPopup("Titre : " + val.titre + "<br>Résumé : " + val.resume + "<br>Réalisateur : " +val.nomRealisateur+ "<br>Durée : " + val.duree + " min<br>Note : " + val.note + "/10<br><img src=\""+val.poster+"\"/>"));
+			//markersfilmChefDoeuvre.addLayer(filmChefDoeuvre);
+		}*/
+
 	});
 });
 
+function useCatFilms(categorie)
+{
+	recupEmplacements.complete(function() {
+		var tab = [];
+		if(categorie == "all")
+		{
+			tab = tabAllFilms;
+		}
+		else if(categorie == "court-metrage")
+		{
+			tab = tabCourtMetrages;
+		}
+		else if(categorie == "long-metrage")
+		{
+			tab = tabLongMetrages;
+		}
+		for(var i = 0; i <tab.length; i++)
+		{
+			if(tab[i]["note"] == null)
+			{
+				filmNonNote.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconNoir}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+			}
+			else if(tab[i]["note"] < 2)
+			{
+				filmControverse.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconRouge}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				//markersfilmControverse.addLayer(filmControverse);
+			}
+			else if(tab[i]["note"] < 4 && tab[i]["note"] >= 2)
+			{
+				filmBanal.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconOrange}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				//markersfilmBanal.addLayer(filmBanal);
+			}
+			else if(tab[i]["note"] < 6 && tab[i]["note"] >= 4)
+			{
+				filmBon.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconJaune}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				//markersfilmBon.addLayer(filmBon);
+			}
+			else if(tab[i]["note"] < 8 && tab[i]["note"] >= 6)
+			{
+				filmExcellent.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconVertCitron}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				//markersfilmExcellent.addLayer(filmExcellent);
+			}
+			else if(tab[i]["note"] < 10 && tab[i]["note"] >= 8)
+			{
+				filmChefDoeuvre.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconVert}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				//markersfilmChefDoeuvre.addLayer(filmChefDoeuvre);
+			}
+		}
+	});
+}
+
+useCatFilms("court-metrage");
+
+document.getElementById("allbutton").onclick = function ()
+{
+	
+	filmControverse.clearLayers();
+	filmBanal.clearLayers();
+	filmBon.clearLayers();
+	filmExcellent.clearLayers();
+	filmChefDoeuvre.clearLayers();
+	filmNonNote.clearLayers();
+	useCatFilms("all");
+	mymap.invalidateSize();
+	
+}
+
+document.getElementById("courtmetragebutton").onclick = function ()
+{
+	filmControverse.clearLayers();
+	filmBanal.clearLayers();
+	filmBon.clearLayers();
+	filmExcellent.clearLayers();
+	filmChefDoeuvre.clearLayers();
+	filmNonNote.clearLayers();
+	useCatFilms("court-metrage");
+	mymap.invalidateSize();
+}
+
+document.getElementById("longmetragebutton").onclick = function ()
+{
+	filmControverse.clearLayers();
+	filmBanal.clearLayers();
+	filmBon.clearLayers();
+	filmExcellent.clearLayers();
+	filmChefDoeuvre.clearLayers();
+	filmNonNote.clearLayers();
+	useCatFilms("long-metrage");
+	mymap.invalidateSize();
+}
+
 recupEmplacements.complete(function() {
-	mymap.addLayer(markersParcelles);
+	/*mymap.addLayer(markersfilmControverse);
+	mymap.addLayer(markersfilmBanal);
+	mymap.addLayer(markersfilmBon);
+	mymap.addLayer(markersfilmExcellent);
+	mymap.addLayer(markersfilmChefDoeuvre);
+	mymap.addLayer(markersfilmNonNote);*/
 });
 
 // contrôle localisation actuelle 
