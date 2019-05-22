@@ -503,7 +503,7 @@ function useCatFilms(categorie)
 	});
 }
 
-useCatFilms("court-metrage");
+useCatFilms("all");
 
 document.getElementById("allbutton").onclick = function ()
 {

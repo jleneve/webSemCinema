@@ -66,7 +66,11 @@ foreach ($rows["result"]["rows"] as $row) {
     {
     	$tab[$i]["poster"] = null;
     }
-    $tab[$i]["nomRealisateur"] = $row["nomRealisateur"];
+    if(isset($row["nomRealisateur"])){
+      $tab[$i]["nomRealisateur"] = $row["nomRealisateur"];
+    }else{
+      $tab[$i]["nomRealisateur"] = null;
+    }
     if(isset($row["duree"]))
     {
     	$tab[$i]["duree"] = $row["duree"];

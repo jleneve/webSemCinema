@@ -307,50 +307,6 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#blue_jasmine>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#glen_caspillo> };INSERT DATA {
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
-        "7.7"^^xsd:decimal. 
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
-        "https://m.media-amazon.com/images/M/MV5BMTM4NjY1MDQwMl5BMl5BanBnXkFtZTcwNTI3Njg3NA@@._V1_SX300.jpg"^^xsd:string.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
-        "94"^^xsd:decimal.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
-        "Comedy, Fantasy, Romance"^^xsd:string.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
-        "While on a trip to Paris with his fiancée's family, a nostalgic screenwriter finds himself mysteriously going back to the 1920s everyday at midnight."^^xsd:string.
-        };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Owen Wilson"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("owen_wilson"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#owen_wilson> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Rachel McAdams"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("rachel_mcadams"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#rachel_mcadams> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Kurt Fuller"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("kurt_fuller"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#kurt_fuller> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Mimi Kennedy"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("mimi_kennedy"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#mimi_kennedy> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#jeune_femme>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "6.6"^^xsd:decimal. 
@@ -439,50 +395,6 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#alibi_com>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#tarek_boudali> };INSERT DATA {
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#alibi_com>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
-        "6.5"^^xsd:decimal. 
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#alibi_com>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
-        "https://m.media-amazon.com/images/M/MV5BNjY2YzFhMzAtNjUyNi00MzRkLWE1ZmEtMjlmMjQwYWFiMzg1L2ltYWdlXkEyXkFqcGdeQXVyMjM5NDQzNTk@._V1_SX300.jpg"^^xsd:string.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#alibi_com>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
-        "90"^^xsd:decimal.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#alibi_com>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
-        "Comedy"^^xsd:string.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#alibi_com>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
-        "Greg founded a company called Alibi.com that creates any type of alibi. With his associate, Augustin, and Medhi his new employee, they devise unstoppable stratagems and stagings to cover ..."^^xsd:string.
-        };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Philippe Lacheau"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("philippe_lacheau"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#alibi_com>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#philippe_lacheau> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Élodie Fontan"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("elodie_fontan"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#alibi_com>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#elodie_fontan> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Julien Arruti"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("julien_arruti"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#alibi_com>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#julien_arruti> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Tarek Boudali"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("tarek_boudali"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#alibi_com>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#tarek_boudali> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#a_jitney_elopement>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "6.0"^^xsd:decimal. 
@@ -513,6 +425,50 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#a_jitney_elopement>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#edna_purviance> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_other_sister>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "6.5"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_other_sister>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://m.media-amazon.com/images/M/MV5BZTlkNDFhZmEtNjhiMC00NzM4LWJmZmYtYWUyYzM0YjMzYmFhXkEyXkFqcGdeQXVyNjU0NTI0Nw@@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_other_sister>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "129"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_other_sister>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Comedy, Drama, Romance"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_other_sister>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "A mentally challenged young woman seeks independence by obtaining her own apartment and attending college while her family plans her sister's wedding."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Juliette Lewis"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("juliette_lewis"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_other_sister>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#juliette_lewis> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Diane Keaton"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("diane_keaton"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_other_sister>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#diane_keaton> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Tom Skerritt"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("tom_skerritt"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_other_sister>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#tom_skerritt> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Giovanni Ribisi"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("giovanni_ribisi"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_other_sister>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#giovanni_ribisi> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#seven_girlfriends>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "6.0"^^xsd:decimal. 
@@ -557,6 +513,50 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#seven_girlfriends>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#neal_lerner> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_diary_of_a_teenage_girl>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "6.9"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_diary_of_a_teenage_girl>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://m.media-amazon.com/images/M/MV5BMjE4MTQ3NTgwOF5BMl5BanBnXkFtZTgwMDQ3NTc5NTE@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_diary_of_a_teenage_girl>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "102"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_diary_of_a_teenage_girl>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Comedy, Drama, Romance"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_diary_of_a_teenage_girl>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "A teen artist living in 1970s San Francisco enters into an affair with her mother's boyfriend."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Bel Powley"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("bel_powley"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_diary_of_a_teenage_girl>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#bel_powley> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Willie"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("willie"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_diary_of_a_teenage_girl>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#willie> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Kristen Wiig"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("kristen_wiig"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_diary_of_a_teenage_girl>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#kristen_wiig> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Abby Wait"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("abby_wait"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_diary_of_a_teenage_girl>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#abby_wait> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#bedazzled>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "6.0"^^xsd:decimal. 
@@ -645,94 +645,6 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coexister>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#audrey_lamy> };INSERT DATA {
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coexister>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
-        "5.7"^^xsd:decimal. 
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coexister>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
-        "https://m.media-amazon.com/images/M/MV5BMjQ2NDllNjMtYTAzOS00ZGMxLTg3MzQtOTgwZWFkZjMwNDdhXkEyXkFqcGdeQXVyNjgzMjY4MDU@._V1_SX300.jpg"^^xsd:string.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coexister>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
-        "90"^^xsd:decimal.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coexister>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
-        "Comedy, Music"^^xsd:string.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coexister>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
-        "To keep his job, a music producer forms a band with a priest, a depressed rabbi and a fake imam."^^xsd:string.
-        };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Ramzy Bedia"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("ramzy_bedia"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coexister>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#ramzy_bedia> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Fabrice Eboué"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("fabrice_eboue"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coexister>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#fabrice_eboue> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Guillaume de Tonquédec"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("guillaume_de_tonquedec"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coexister>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#guillaume_de_tonquedec> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Audrey Lamy"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("audrey_lamy"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#coexister>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#audrey_lamy> };INSERT DATA {
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
-        "7.9"^^xsd:decimal. 
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
-        "https://m.media-amazon.com/images/M/MV5BMDUyZWU5N2UtOWFlMy00MTI0LTk0ZDYtMzFhNjljODBhZDA5XkEyXkFqcGdeQXVyNzA4ODc3ODU@._V1_SX300.jpg"^^xsd:string.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
-        "100"^^xsd:decimal.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
-        "Comedy, Drama, Romance"^^xsd:string.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
-        "An egomaniacal film star develops a relationship with a young dancer against the backdrop of Hollywood's silent era."^^xsd:string.
-        };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Jean Dujardin"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("jean_dujardin"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#jean_dujardin> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Bérénice Bejo"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("berenice_bejo"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#berenice_bejo> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "John Goodman"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("john_goodman"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#john_goodman> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "James Cromwell"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("james_cromwell"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#james_cromwell> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#dalida>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "7.0"^^xsd:decimal. 
@@ -821,6 +733,94 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#bienvenue_au_gondwana>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#digbeu_cravate> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_lady_from_shanghai>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "7.7"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_lady_from_shanghai>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://m.media-amazon.com/images/M/MV5BNWZkNTYxZjQtN2IwZi00OGExLTg3ZDEtODNjMDFkN2Y5Y2NkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_lady_from_shanghai>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "87"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_lady_from_shanghai>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Crime, Drama, Film-Noir, Mystery, Thriller"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_lady_from_shanghai>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "Fascinated by gorgeous Mrs. Bannister, seaman Michael O'Hara joins a bizarre yachting cruise, and ends up mired in a complex murder plot."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Rita Hayworth"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("rita_hayworth"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_lady_from_shanghai>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#rita_hayworth> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Orson Welles"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("orson_welles"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_lady_from_shanghai>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#orson_welles> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Everett Sloane"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("everett_sloane"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_lady_from_shanghai>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#everett_sloane> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Glenn Anders"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("glenn_anders"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_lady_from_shanghai>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#glenn_anders> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_bridge>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "7.6"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_bridge>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://m.media-amazon.com/images/M/MV5BMTQyNjEzMjIyMV5BMl5BanBnXkFtZTgwMTg0NjYxMjE@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_bridge>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "43"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_bridge>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Crime, Drama, Mystery, Thriller"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_bridge>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "Two detectives work together to take down a serial killer operating on both sides of the Texas-Chihuahua border."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Diane Kruger"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("diane_kruger"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_bridge>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#diane_kruger> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Demián Bichir"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("demian_bichir"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_bridge>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#demian_bichir> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Thomas M. Wright"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("thomas_m_wright"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_bridge>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#thomas_m_wright> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Ted Levine"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("ted_levine"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_bridge>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#ted_levine> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#american_graffiti>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "7.5"^^xsd:decimal. 
@@ -997,6 +997,50 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#nine_months>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#joan_cusack> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_competition>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "6.7"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_competition>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://images-na.ssl-images-amazon.com/images/M/MV5BOTUzMDg4NDAyMl5BMl5BanBnXkFtZTgwNjU5MTEyMDE@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_competition>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "123"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_competition>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Drama, Romance, Music"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_competition>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "The movie centers on a piano competition whose winner is assured of success. It is Paul's last chance to compete, but newcomer Heidi may be a better pianist. Can romance be far away? Will ..."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Richard Dreyfuss"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("richard_dreyfuss"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_competition>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#richard_dreyfuss> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Amy Irving"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("amy_irving"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_competition>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#amy_irving> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Lee Remick"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("lee_remick"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_competition>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#lee_remick> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Sam Wanamaker"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("sam_wanamaker"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_competition>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#sam_wanamaker> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#mere_et_fille>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "6.0"^^xsd:decimal. 
@@ -1481,50 +1525,6 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#marie_francine>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#philippe_laudenbach> };INSERT DATA {
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#marie_francine>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
-        "5.6"^^xsd:decimal. 
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#marie_francine>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
-        "https://m.media-amazon.com/images/M/MV5BOWJiNWNkMDctNGU2NS00NDc3LTk3ZGItN2M0MTVjYmJiMzQzXkEyXkFqcGdeQXVyNzM5OTkwODI@._V1_SX300.jpg"^^xsd:string.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#marie_francine>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
-        "95"^^xsd:decimal.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#marie_francine>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
-        "Comedy"^^xsd:string.
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#marie_francine>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
-        "A woman at the age of 50 moves back in with her parent after her husband leaves her for a younger woman."^^xsd:string.
-        };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Valérie Lemercier"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("valerie_lemercier"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#marie_francine>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#valerie_lemercier> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Patrick Timsit"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("patrick_timsit"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#marie_francine>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#patrick_timsit> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Hélène Vincent"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("helene_vincent"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#marie_francine>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#helene_vincent> };INSERT {?newUri a ?comedienUri. 
-        ?newUri rdfs:label "Philippe Laudenbach"@fr.}
-        WHERE{ 
-          ?comedienUri rdfs:label "comédien"@fr.
-          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("philippe_laudenbach"))) AS ?newUri).
-        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#marie_francine>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#philippe_laudenbach> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#vive_la_crise>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "3.8"^^xsd:decimal. 
@@ -1569,6 +1569,50 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#vive_la_crise>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#isabelle_de_hertogh> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_conversation>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "7.9"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_conversation>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://m.media-amazon.com/images/M/MV5BYTQxYWJlYTgtMTk5MS00ZGFiLWI5MWItYjhkNjM3YmUyNjYxXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_conversation>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "113"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_conversation>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Drama, Mystery, Thriller"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_conversation>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "A paranoid, secretive surveillance expert has a crisis of conscience when he suspects that a couple, on whom he is spying, will be murdered."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Gene Hackman"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("gene_hackman"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_conversation>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#gene_hackman> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "John Cazale"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("john_cazale"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_conversation>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#john_cazale> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Allen Garfield"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("allen_garfield"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_conversation>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#allen_garfield> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Frederic Forrest"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("frederic_forrest"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_conversation>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#frederic_forrest> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#bitter_flowers>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "7.4"^^xsd:decimal. 
@@ -1745,6 +1789,94 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#les_ex>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#baptiste_lecaplain> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_right_stuff>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "7.9"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_right_stuff>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://m.media-amazon.com/images/M/MV5BOTUwMDA3MTYtZjhjMi00ODFmLTg5ZTAtYzgwN2NlODgzMmUwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_right_stuff>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "193"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_right_stuff>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Adventure, Biography, Drama, History"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_right_stuff>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "The story of the original Mercury 7 astronauts and their macho, seat-of-the-pants approach to the space program."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Sam Shepard"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("sam_shepard"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_right_stuff>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#sam_shepard> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Scott Glenn"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("scott_glenn"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_right_stuff>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#scott_glenn> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Ed Harris"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("ed_harris"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_right_stuff>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#ed_harris> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Dennis Quaid"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("dennis_quaid"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_right_stuff>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#dennis_quaid> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_maltese_falcon>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "8.1"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_maltese_falcon>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://m.media-amazon.com/images/M/MV5BZjIwNGM1ZTUtOThjYS00NDdiLTk2ZDYtNGY5YjJkNzliM2JjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_maltese_falcon>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "100"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_maltese_falcon>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Film-Noir, Mystery"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_maltese_falcon>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "A private detective takes on a case that involves him with three eccentric criminals, a gorgeous liar, and their quest for a priceless statuette."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Humphrey Bogart"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("humphrey_bogart"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_maltese_falcon>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#humphrey_bogart> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Mary Astor"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("mary_astor"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_maltese_falcon>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#mary_astor> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Gladys George"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("gladys_george"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_maltese_falcon>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#gladys_george> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Peter Lorre"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("peter_lorre"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_maltese_falcon>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#peter_lorre> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#la_melodie>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "6.4"^^xsd:decimal. 
@@ -2229,6 +2361,50 @@ INSERT DATA {
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#befikre>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#hugo_diego_garcia> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_times_of_harvey_milk>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "8.3"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_times_of_harvey_milk>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://m.media-amazon.com/images/M/MV5BNDJmMGM2OTYtMjhlZC00YTkyLTk3NTgtNmFmNzdmNDg2N2M3XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_times_of_harvey_milk>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "90"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_times_of_harvey_milk>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Documentary, Biography, History"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_times_of_harvey_milk>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "A documentary of the successful career and assassination of San Francisco's first elected gay city supervisor."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Harvey Milk"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("harvey_milk"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_times_of_harvey_milk>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#harvey_milk> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Harvey Fierstein"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("harvey_fierstein"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_times_of_harvey_milk>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#harvey_fierstein> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Anne Kronenberg"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("anne_kronenberg"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_times_of_harvey_milk>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#anne_kronenberg> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Tory Hartmann"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("tory_hartmann"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_times_of_harvey_milk>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#tory_hartmann> };INSERT DATA {
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#knock>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
         "6.0"^^xsd:decimal. 
@@ -2360,4 +2536,92 @@ INSERT DATA {
           BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("michael_smiley"))) AS ?newUri).
         };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#madame>
         <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
-        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#michael_smiley> };
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#michael_smiley> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "7.9"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://m.media-amazon.com/images/M/MV5BMDUyZWU5N2UtOWFlMy00MTI0LTk0ZDYtMzFhNjljODBhZDA5XkEyXkFqcGdeQXVyNzA4ODc3ODU@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "100"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Comedy, Drama, Romance"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "An egomaniacal film star develops a relationship with a young dancer against the backdrop of Hollywood's silent era."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Jean Dujardin"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("jean_dujardin"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#jean_dujardin> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Bérénice Bejo"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("berenice_bejo"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#berenice_bejo> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "John Goodman"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("john_goodman"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#john_goodman> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "James Cromwell"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("james_cromwell"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#the_artist>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#james_cromwell> };INSERT DATA {
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_614c3545_53b1_487b_9503_c8edf9c9a4b7>
+        "7.7"^^xsd:decimal. 
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3817489b_921d_40a7_bdc1_c730e9e48e5f>
+        "https://m.media-amazon.com/images/M/MV5BMTM4NjY1MDQwMl5BMl5BanBnXkFtZTcwNTI3Njg3NA@@._V1_SX300.jpg"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63>
+        "94"^^xsd:decimal.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_0a4126dc_7ee4_4bc4_950e_4d157ce9cc6b>
+        "Comedy, Fantasy, Romance"^^xsd:string.
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_a0bb5b29_0359_4903_8e1c_808b3101a5a5>
+        "While on a trip to Paris with his fiancée's family, a nostalgic screenwriter finds himself mysteriously going back to the 1920s everyday at midnight."^^xsd:string.
+        };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Owen Wilson"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("owen_wilson"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#owen_wilson> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Rachel McAdams"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("rachel_mcadams"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#rachel_mcadams> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Kurt Fuller"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("kurt_fuller"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#kurt_fuller> };INSERT {?newUri a ?comedienUri. 
+        ?newUri rdfs:label "Mimi Kennedy"@fr.}
+        WHERE{ 
+          ?comedienUri rdfs:label "comédien"@fr.
+          BIND (uri(concat("http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#",encode_for_uri("mimi_kennedy"))) AS ?newUri).
+        };INSERT DATA { <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#midnight_in_paris>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_916650df_eb4f_4983_b3b0_a69682283a11>
+        <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#mimi_kennedy> };

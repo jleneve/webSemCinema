@@ -13,7 +13,7 @@
                 a ja:InfModel ;
 
                 # Enable/disable systeme d'implication OWL : e.g. property owl:sameAs
-                # ja:reasoner [ja:reasonerURL <http://jena.hpl.hp.com/2003/OWLFBRuleReasoner>] ;
+                 ja:reasoner [ja:reasonerURL <http://jena.hpl.hp.com/2003/OWLFBRuleReasoner>] ;
 
                 # Enable/disable systeme d'implication RDFS : e.g. property rdfs:subClassOf
                 # ja:reasoner [ja:reasonerURL <http://jena.hpl.hp.com/2003/RDFSExptRuleReasoner>] ;
