@@ -402,6 +402,7 @@ var recupEmplacements = $.getJSON("http://localhost/webSemCinema/controller/posi
 		tableau["poster"] = val.poster;
 		tableau["nomRealisateur"] = val.nomRealisateur;
 		tableau["duree"] = val.duree;
+		tableau["filmDBPedia"] = val.filmDBPedia;
 		tabAllFilms[j] = tableau;
 		j++;
 		if(val.duree == null)
@@ -468,53 +469,114 @@ function useCatFilms(categorie)
 		{
 			tab = tabLongMetrages;
 		}
-		for(var i = 0; i <tab.length; i++)
+
+		var tableauActeurs = [];
+		/*for(var j = 0; j < tab.length; j++)
 		{
-			var baliseFont;
-
-			if(tab[i]["duree"] == null)
+			if(tab[j]["filmDBPedia"] != null)
 			{
-				baliseFont = "<font>";
-			}
-			else if(tab[i]["duree"] <= 59)
-			{
-				baliseFont = "<font color=\"#007BFF\">";
-			}
-			else if(tab[i]["duree"] > 59)
-			{
-				baliseFont = "<font color=\"#DC3545\">";
-			}
-
-			if(tab[i]["note"] == null)
-			{
-				filmNonNote.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconNoir}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont + tab[i]["duree"] + " min</font><br><b>Note : </b>" + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
-			}
-			else if(tab[i]["note"] < 2)
-			{
-				filmControverse.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconRouge}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"red\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
-				//markersfilmControverse.addLayer(filmControverse);
-			}
-			else if(tab[i]["note"] < 4 && tab[i]["note"] >= 2)
-			{
-				filmBanal.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconOrange}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"orange\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
-				//markersfilmBanal.addLayer(filmBanal);
-			}
-			else if(tab[i]["note"] < 6 && tab[i]["note"] >= 4)
-			{
-				filmBon.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconJaune}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"yellow\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
-				//markersfilmBon.addLayer(filmBon);
-			}
-			else if(tab[i]["note"] < 8 && tab[i]["note"] >= 6)
-			{
-				filmExcellent.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconVertCitron}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"limegreen\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
-				//markersfilmExcellent.addLayer(filmExcellent);
-			}
-			else if(tab[i]["note"] < 10 && tab[i]["note"] >= 8)
-			{
-				filmChefDoeuvre.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconVert}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"green\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
-				//markersfilmChefDoeuvre.addLayer(filmChefDoeuvre);
+				var recupActeurs = $.getJSON("http://localhost/webSemCinema/controller/recup_acteurs.php", {titre: tab[j]["titre"]}, function(data, j) {
+					$.each(data, function(key, val, j){
+						tableauActeurs[tab[j]["titre"]] = tableauActeurs[tab[j]["titre"]] + " - " + val.acteur;
+					});
+				});
 			}
 		}
+*/
+
+		$.each(tab,function(j){
+			var tableau = [];
+		  if(tab[j]["filmDBPedia"] !=null)
+		  {
+		  	$.getJSON('http://localhost/webSemCinema/controller/recup_acteurs.php',{
+			    titre: tab[j]["titre"]
+			  },(function(j){
+			  		return function(data)
+			  		{
+			  			var x = 0;
+			  			$.each(data, function(key, val){
+			  				tableau[x] = val.acteur;
+							x++;
+						});
+			  		}
+			})(j));
+			tableauActeurs[tab[j]["titre"]] = tableau;
+		  }
+
+		});
+
+
+		/*$(document).ajaxStop(function()){
+		    console.log("All done!");
+		};*/
+
+		$(document).ajaxStop(function() {
+			for(var i = 0; i <tab.length; i++)
+			{
+				var baliseFont;
+				var acteur = "";
+
+				if(tableauActeurs[tab[i]["titre"]])
+				{
+					for(var y = 0; y < tableauActeurs[tab[i]["titre"]].length; y++)
+					{
+						if(y == 0)
+						{
+							acteur = acteur + tableauActeurs[tab[i]["titre"]][y];
+						}
+						else
+						{
+							acteur = acteur + " - " + tableauActeurs[tab[i]["titre"]][y];
+						}
+						
+					}
+				}
+				
+				if(tab[i]["duree"] == null)
+				{
+					baliseFont = "<font>";
+				}
+				else if(tab[i]["duree"] <= 59)
+				{
+					baliseFont = "<font color=\"#007BFF\">";
+				}
+				else if(tab[i]["duree"] > 59)
+				{
+					baliseFont = "<font color=\"#DC3545\">";
+				}
+
+				if(tab[i]["note"] == null)
+				{
+					filmNonNote.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconNoir}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Acteurs : </b>" + acteur + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont + tab[i]["duree"] + " min</font><br><b>Note : </b>" + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				}
+				else if(tab[i]["note"] < 2)
+				{
+					filmControverse.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconRouge}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Acteurs : </b>" + acteur +"<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"red\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
+					//markersfilmControverse.addLayer(filmControverse);
+				}
+				else if(tab[i]["note"] < 4 && tab[i]["note"] >= 2)
+				{
+					filmBanal.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconOrange}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Acteurs : </b>" + acteur +"<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"orange\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
+					//markersfilmBanal.addLayer(filmBanal);
+				}
+				else if(tab[i]["note"] < 6 && tab[i]["note"] >= 4)
+				{
+					filmBon.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconJaune}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Acteurs : </b>" + acteur +"<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"yellow\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
+					//markersfilmBon.addLayer(filmBon);
+				}
+				else if(tab[i]["note"] < 8 && tab[i]["note"] >= 6)
+				{
+					filmExcellent.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconVertCitron}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Acteurs : </b>" + acteur +"<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"limegreen\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
+					//markersfilmExcellent.addLayer(filmExcellent);
+				}
+				else if(tab[i]["note"] < 10 && tab[i]["note"] >= 8)
+				{
+					filmChefDoeuvre.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconVert}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Acteurs : </b>" + acteur +"<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"green\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
+					//markersfilmChefDoeuvre.addLayer(filmChefDoeuvre);
+				}
+			}
+		});
+		
 	});
 }
 

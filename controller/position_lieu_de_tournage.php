@@ -11,12 +11,13 @@ $sc->setEndpointRead($endpoint);
 //$sc->setMethodHTTPRead("GET");
 $q = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-SELECT ?x ?y ?note ?titre ?resume ?poster ?nomRealisateur ?duree WHERE 
+SELECT ?x ?y ?note ?titre ?resume ?poster ?nomRealisateur ?duree ?filmDBPedia WHERE 
 {
-  	?a a ?coordonnees.
-	?coordonnees rdfs:label \"coordonnées\"@fr.
-  	?a <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_30b3afa8_0143_4c02_ba87_52ed69fdb037> ?x.
+    ?a a ?coordonnees.
+    ?coordonnees rdfs:label \"coordonnées\"@fr.
+    ?a <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_30b3afa8_0143_4c02_ba87_52ed69fdb037> ?x.
   ?a <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_3d9dc69a_be17_4ff8_9811_7d64595a225b> ?y.
   ?adresse <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_34bb83bd_13bf_460d_9a5f_9721d3b218d6> ?a.
   ?film <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_8b624f36_40f7_4152_94b4_2243b6a3a2ac> ?adresse.
@@ -27,6 +28,9 @@ SELECT ?x ?y ?note ?titre ?resume ?poster ?nomRealisateur ?duree WHERE
   ?film <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLObjectProperty_debcb6a0_f7ad_45a5_9e31_b62ebba01f27> ?realisateur.
   ?realisateur rdfs:label ?nomRealisateur.
   OPTIONAL {?film <http://www.semanticweb.org/fabien/ontologies/2019/1/untitled-ontology-2#OWLDataProperty_98d4f6aa_7216_46e4_8fc1_ae238cc80f63> ?duree.}.
+  OPTIONAL{?film owl:sameAs ?filmDBPedia.
+  FILTER(contains(str(?filmDBPedia), \"dbpedia\")).}.
+  
 }";
 $rows = $sc->query($q, 'rows');
 
@@ -78,6 +82,14 @@ foreach ($rows["result"]["rows"] as $row) {
     else
     {
     	$tab[$i]["duree"] = null;
+    }
+    if(isset($row["filmDBPedia"]))
+    {
+        $tab[$i]["filmDBPedia"] = $row["filmDBPedia"];
+    }
+    else
+    {
+        $tab[$i]["filmDBPedia"] = null;
     }
     $i ++;
 }
