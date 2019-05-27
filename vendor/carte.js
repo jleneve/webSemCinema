@@ -364,7 +364,7 @@ function MAJ_nom_ville(ville, codePostal){
 var mymap = L.map('map', {
 	center: [46.628346, 2.577960],
 	zoom: 6,
-	layers: [defaut, filmControverse, filmBanal, filmBon, filmExcellent, filmChefDoeuvre, filmNonNote],
+	layers: [defaut, filmControverse, filmBanal, filmBon, filmExcellent, filmChefDoeuvre],
 	loadingControl: true
 });
 
@@ -470,33 +470,48 @@ function useCatFilms(categorie)
 		}
 		for(var i = 0; i <tab.length; i++)
 		{
+			var baliseFont;
+
+			if(tab[i]["duree"] == null)
+			{
+				baliseFont = "<font>";
+			}
+			else if(tab[i]["duree"] <= 59)
+			{
+				baliseFont = "<font color=\"#007BFF\">";
+			}
+			else if(tab[i]["duree"] > 59)
+			{
+				baliseFont = "<font color=\"#DC3545\">";
+			}
+
 			if(tab[i]["note"] == null)
 			{
-				filmNonNote.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconNoir}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				filmNonNote.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconNoir}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont + tab[i]["duree"] + " min</font><br><b>Note : </b>" + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
 			}
 			else if(tab[i]["note"] < 2)
 			{
-				filmControverse.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconRouge}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				filmControverse.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconRouge}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"red\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
 				//markersfilmControverse.addLayer(filmControverse);
 			}
 			else if(tab[i]["note"] < 4 && tab[i]["note"] >= 2)
 			{
-				filmBanal.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconOrange}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				filmBanal.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconOrange}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"orange\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
 				//markersfilmBanal.addLayer(filmBanal);
 			}
 			else if(tab[i]["note"] < 6 && tab[i]["note"] >= 4)
 			{
-				filmBon.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconJaune}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				filmBon.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconJaune}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"yellow\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
 				//markersfilmBon.addLayer(filmBon);
 			}
 			else if(tab[i]["note"] < 8 && tab[i]["note"] >= 6)
 			{
-				filmExcellent.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconVertCitron}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				filmExcellent.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconVertCitron}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"limegreen\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
 				//markersfilmExcellent.addLayer(filmExcellent);
 			}
 			else if(tab[i]["note"] < 10 && tab[i]["note"] >= 8)
 			{
-				filmChefDoeuvre.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconVert}).bindPopup("Titre : " + tab[i]["titre"] + "<br>Résumé : " + tab[i]["resume"] + "<br>Réalisateur : " +tab[i]["nomRealisateur"]+ "<br>Durée : " + tab[i]["duree"] + " min<br>Note : " + tab[i]["note"] + "/10<br><img src=\""+tab[i]["poster"]+"\"/>"));
+				filmChefDoeuvre.addLayer(L.marker([tab[i]["x"], tab[i]["y"]], {icon: myIconVert}).bindPopup("<b>Titre : </b>" + tab[i]["titre"] + "<br><b>Résumé : </b>" + tab[i]["resume"] + "<br><b>Réalisateur : </b>" +tab[i]["nomRealisateur"]+ "<br><b>Durée : </b>" + baliseFont+ tab[i]["duree"] + " min</font><br><b>Note : </b><font color=\"green\">" + tab[i]["note"] + "/10</font><br><img src=\""+tab[i]["poster"]+"\"/>"));
 				//markersfilmChefDoeuvre.addLayer(filmChefDoeuvre);
 			}
 		}
